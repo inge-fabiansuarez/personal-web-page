@@ -1,66 +1,46 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# [Elaborado por Fabián Suárez](https://www.linkedin.com/in/inge-fabiansuarez/)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Página Web Personal
 
-## About Laravel
+Este proyecto es una página web personal diseñada para presentar un portafolio profesional y facilitar la actualización automática de la información desde LinkedIn, además de mostrar repositorios de GitHub en un formato de tarjeta atractivo con íconos de redes sociales. La página permite a los visitantes explorar fácilmente tus logros, proyectos, y contribuciones técnicas.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+La integración con LinkedIn automatiza la sincronización de cambios en tu perfil profesional, manteniendo tu página web actualizada en tiempo real. Esta funcionalidad es especialmente útil para profesionales del área de desarrollo de software, pues permite una gestión centralizada del perfil profesional, sin necesidad de realizar actualizaciones manuales.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Adicionalmente, la página utiliza Firebase Firestore para gestionar la autenticación y persistir la información de login del usuario, proporcionando una experiencia segura y personalizada.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Manual de Implementación o Instalación
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+  
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. Unzip the downloaded archive
 
-## Laravel Sponsors
+2. Copy and paste **soft-ui-dashboard-laravel-master** folder in your **projects** folder. Rename the folder to your project's name
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+3. In your terminal run `composer install`
 
-### Premium Partners
+4. Copy `.env.example` to `.env` and updated the configurations (mainly the database configuration)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+5. In your terminal run `php artisan key:generate`
 
-## Contributing
+6. Run `php artisan migrate --seed` to create the database tables and seed the roles and users tables
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+7. Run `php artisan storage:link` to create the storage symlink (if you are using **Vagrant** with **Homestead** for development, remember to ssh into your virtual machine and run the command from there).
 
-## Code of Conduct
+  
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+## Navegadores Soportados
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+  
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<img  src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png"  width="64"  height="64">  <img  src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png"  width="64"  height="64">  <img  src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png"  width="64"  height="64">  <img  src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png"  width="64"  height="64">  <img  src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png"  width="64"  height="64">
+
+  
+## Creditos
+
+  
+
+- [Fabián Enrique Suárez Carvajal](https://www.linkedin.com/in/fabian-enrique-suarez-carvajal)
