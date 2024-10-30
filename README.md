@@ -10,13 +10,9 @@ Adicionalmente, la página utiliza Firebase Firestore para gestionar la autentic
 
 ## Manual de Implementación o Instalación
 
-
-
-  
-
 1. Unzip the downloaded archive
 
-2. Copy and paste **soft-ui-dashboard-laravel-master** folder in your **projects** folder. Rename the folder to your project's name
+2. Copy and paste the folder in your **projects** folder. Rename the folder to your project's name
 
 3. In your terminal run `composer install`
 
